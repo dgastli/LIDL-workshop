@@ -41,6 +41,9 @@ console.log('adresse = '+ecole.adresse);
 
 function add(x,y){return x+y};
 
+
+
+
 module.exports={
   addition:function(x,y){return x+y},
 
