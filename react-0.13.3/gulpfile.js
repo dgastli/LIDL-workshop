@@ -6,7 +6,7 @@ gulp.task('default', function () {
         gulp.src('src/*.jsx')
 
         .pipe(react())
-        .pipe(gulp.dest('src/build'))
+        .pipe(gulp.dest('src/build'));
 
 
         gulp.src('src/build/exemple10.js')
@@ -14,5 +14,5 @@ gulp.task('default', function () {
           insertGlobals : true,
           debug : !gulp.env.production
         }))
-        .pipe(gulp.dest('src/build/'))
+        .pipe(gulp.dest('src/build/'));
 });
