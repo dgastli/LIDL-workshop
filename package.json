@@ -26,5 +26,10 @@
     "gamma": "^1.0.0",
     "react": "^0.13.3",
     "uniq": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-react": "^3.0.1"
   }
 }
