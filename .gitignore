@@ -1,3 +1,6 @@
+react-0.13.3/src/build
+
+
 # Logs
 logs
 *.log
@@ -6,6 +9,8 @@ logs
 pids
 *.pid
 *.seed
+
+
 
 # Coverage directory used by tools like istanbul
 coverage
