@@ -24,7 +24,9 @@
     "browserify": "^10.2.4",
     "express": "^4.12.4",
     "gamma": "^1.0.0",
+    "griddle-react": "^0.2.13",
     "react": "^0.13.3",
+    "underscore": "^1.8.3",
     "uniq": "^1.0.1"
   },
   "devDependencies": {
