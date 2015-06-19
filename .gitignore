@@ -1,4 +1,8 @@
-react-0.13.3/src/build
+react-0.13.3
+
+dist
+
+build
 
 
 # Logs

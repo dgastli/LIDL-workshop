@@ -125,25 +125,47 @@ var fakeData =  [
   "Ville": "Tazarka",
   "id": 5
 },
-
-
 ];
 
 
-var MyGriddle = React.createClass({displayName: "MyGriddle",
+
+var MyGriddle = React.createClass({
+
+  getInitialState:function(){
+    return {data:[{"Nom":1,"Prenom":1}]};
+  },
+
+  onClick:function(){
+    console.log("Ok");
+    // this.setState({data:fakeData.map(function(x){
+    //   var y = x;
+    //   y.Nom = "AA" + x.Nom ;
+    //   return y;
+    // })});
+
+    var ancien = this.state.data;
+
+    ancien.push({
+      "Nom":ancien[ancien.length-1].Nom+1,
+      "Prenom":ancien[ancien.length-1].Prenom+2,
+    });
+
+    this.setState({data:ancien});
+  },
 
   render: function () {
     return (
-      React.createElement("div", null,
+      <div>
 
-        React.createElement(Griddle, {results: fakeData})
+        <Griddle results={this.state.data}/>
+        <button onClick={this.onClick}> OK </button>
 
-      )
+      </div>
     );
   }
 });
 
 React.render(
-    React.createElement(MyGriddle, null),
+    <MyGriddle />,
     document.getElementById('example')
 );
