@@ -23,15 +23,20 @@
     "array": "^0.4.3",
     "browserify": "^10.2.4",
     "express": "^4.12.4",
+    "fixed-data-table": "^0.3.0",
     "gamma": "^1.0.0",
     "griddle-react": "^0.2.13",
+    "rc-calendar": "^3.9.1",
     "react": "^0.13.3",
+    "react-ghost-button": "^2.3.0",
     "underscore": "^1.8.3",
     "uniq": "^1.0.1"
   },
   "devDependencies": {
+    "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1",
-    "gulp-react": "^3.0.1"
+    "gulp-react": "^3.0.1",
+    "reactify": "^1.1.1"
   }
 }
