@@ -34,6 +34,8 @@
   },
   "devDependencies": {
     "del": "^1.2.0",
+    "esprima": "^2.3.0",
+    "estraverse": "^4.1.0",
     "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1",
     "gulp-react": "^3.0.1",
