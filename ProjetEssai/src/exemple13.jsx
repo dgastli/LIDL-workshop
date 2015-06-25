@@ -9,7 +9,7 @@ var rows = [
   ['a1', 'b1', 'c1'],
   ['a2', 'b3', 'c2'],
   ['a3', 'b3', 'c3'],
-  
+
 ];
 
 function rowGetter(rowIndex) {
@@ -21,17 +21,17 @@ React.render(
     rowHeight={50}
     rowGetter={rowGetter}
     rowsCount={rows.length}
-    width={5000}
-    height={5000}
+    width={500}
+    height={500}
     headerHeight={50}>
     <Column
       label="Col 1"
-      width={3000}
+      width={300}
       dataKey={0}
     />
     <Column
       label="Col 2"
-      width={2000}
+      width={200}
       dataKey={1}
     />
   </Table>,

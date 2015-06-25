@@ -17,7 +17,7 @@ var App = React.createClass({
     var code=React.findDOMNode(this.refs.textareaPas).value;
     var syntaxe =esprima.parse(code);
     //var syntaxe =esprima.parse('var answer = 42; x = 5; y = 1 + 3; z = 7 - 1; var nom = "dorra"; y = x; t=x+y;x=10*3;x=x+1;x=1+x;personne=nom+"gastli";');
-    console.log(JSON.stringify(esprima.parse('var answer = 42; x = 5; y = 1 + 3;z=7-1;var nom = "dorra"; y = x;x=10*3;x=x+1;x=1+x;'), null, 4));
+    //console.log(JSON.stringify(esprima.parse('for ( i=0; i<5; i++){console.log("coucou")}'), null, 4));
     var ancien =this.state.data;
     estraverse.traverse(syntaxe, {
 
@@ -128,6 +128,30 @@ var App = React.createClass({
 
        }
          break;
+/*      case 'ForStatement':
+         variable =node.init.left.name;
+         variableInit=node.init.right.value;
+         variableTestFin=node.test.right.value;
+         var operator=node.test.operator;
+         switch(operator){
+           case '<':
+             for(i=variableInit;i<variableTestFin;i++)
+             valeur=operand1+operand2;
+             console.log(valeur);
+             break;
+           case '>':
+             valeur=operand1-operand2;
+             break;
+           case '<=':
+             valeur=operand1/operand2;
+             break;
+           case '>=':
+             valeur=operand1*operand2;
+             break;
+
+          }
+
+*/
 
     }
     }
